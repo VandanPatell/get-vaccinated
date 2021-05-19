@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.5.1.js"></script>
+
+</head>
+
+<body>
+    <!-- <script>
+        var settings = {
+            "url": "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=360005&date=12-05-2021",
+            "method": "GET",
+            "timeout": 0,
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+    </script> -->
+    <!-- <script>
+        var settings = {
+            "url": "https://cdn-api.co-vin.in/api/v2/appointment/beneficiaries",
+            "method": "GET",
+            "timeout": 0
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+    </script> -->
+
+    <script>
+        data = '{ "mobile": "9408251428" }'
+        data = JSON.parse(data)
+        console.log(typeof (data))
+
+        var settings = {
+            "url": "https://cdn-api.co-vin.in/api/v2/auth/generateMobileOTP",
+            "method": "POST",
+            "timeout": 0,
+            "data": "{\r\n    \"mobile\": \"9408251428\",\r\n    \"secret\": \"3sjOr2rmM52GzhpMHjDEE1kpQeRxwFDr4YcBEimi\"\r\n}",
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+    </script>
+</body>
+
+</html>
