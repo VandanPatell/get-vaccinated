@@ -9,6 +9,7 @@
         $url = 'https://cdn-api.co-vin.in/api/v2/admin/location/states/';
         curl_setopt($ch,CURLOPT_URL,$url);
         curl_setopt($ch,CURLOPT_RETURNTRANSFER,TRUE);
+        curl_setopt($ch,CURLOPT_SSL_VERIFYPEER,FALSE);
         $resp = curl_exec($ch);
         $decoded = json_decode($resp,true);
         foreach ($decoded['states'] as $key => $value) {
