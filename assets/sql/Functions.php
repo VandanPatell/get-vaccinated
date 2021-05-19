@@ -186,12 +186,5 @@
 
     }
 
-    if(isset($_POST['OTP'])){
-        CheckOTP($_POST['OTP']);
-    }
-
-    function CheckOTP(){
-        
-    }
 
 ?>
