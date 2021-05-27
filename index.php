@@ -1,5 +1,5 @@
 <?php
-
+    print_r("code Running");
     // SHA256 OTP conversion while confirm OTP
 
     $ch = curl_init();
