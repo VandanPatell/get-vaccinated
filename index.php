@@ -3,6 +3,7 @@
     // SHA256 OTP conversion while confirm OTP
 
     $ch = curl_init();
+    print_r($ch);
 
     // $url = 'https://reqres.in/api/users?page=2';
     // $url = 'https://cdn-api.co-vin.in/api/v2/admin/location/states';
