@@ -11,11 +11,11 @@
     // $url = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=775&date=10-05-2021';
     // $url = 'https://cdn-api.co-vin.in/api/v2/auth/public/generateOTP';
     // $url = 'https://reqres.in/api/users';
-    $url = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=360005&date=26-05-2021';
+    $url = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=360005&date=27-05-2021';
     // $url = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=154&date=13-05-2021';
-    $post = [
-        'mobile' => '9408251428'
-    ];
+//     $post = [
+//         'mobile' => '1234567890'
+//     ];
 
     $post = json_encode($post);
 
