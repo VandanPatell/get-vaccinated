@@ -18,7 +18,7 @@
 //         'mobile' => '1234567890'
 //     ];
 
-    $post = json_encode($post);
+//     $post = json_encode($post);
 
     curl_setopt($ch,CURLOPT_URL,$url);
     // curl_setopt($ch, CURLOPT_POST, true);
@@ -27,6 +27,7 @@
     curl_setopt($ch,CURLOPT_RETURNTRANSFER,TRUE);
 
     $resp = curl_exec($ch);
+    print_r($resp);
 
     if($e = curl_error($ch)){
         echo $e;
